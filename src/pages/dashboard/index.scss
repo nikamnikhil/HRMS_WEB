@@ -1,0 +1,16 @@
+.card-main {
+  margin: 16px;
+  .ant-list-item {
+    padding: 8px 12px !important;
+    > * {
+      margin: 0 4px;
+    }
+  }
+}
+
+.table-row-light {
+    background-color: #ffffff;
+}
+.table-row-dark {
+    background-color: #f9f7f7;
+}

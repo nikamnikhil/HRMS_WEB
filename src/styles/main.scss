@@ -1,0 +1,122 @@
+html,
+body,
+#root,
+#root > * {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#searchForm > .ant-row > .ant-row.ant-form-item {
+  width: 100%;
+  text-align: right;
+  padding-right: 12px;
+  .ant-col {
+    flex: 1;
+    max-width: 100%;
+    width: 100%;
+    .ant-btn:first-child {
+      margin-right: 10px;
+    }
+  }
+}
+
+.app-loading-wrapper.ant-spin-spinning {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.ant-table-thead > tr > th {
+  background-color: #3282B8  !important;
+  color: #fff !important;
+}
+
+.ant-table-tbody{
+  padding: 10px 10px !important;
+}
+.ant-table-tbody > tr > td{
+  padding: 10px 10px !important;
+}
+
+.layout-page-content {
+  background-color: #DFF5FF !important;
+  overflow: scroll !important;
+}
+
+.ant-table-column-sorter{
+  color: #fff !important;
+}
+
+.ant-pagination {
+    background-color: #3282B8 !important;
+    padding: 10px;
+    border-radius: 0px 0px 8px 8px;
+    margin: -1px auto;
+}
+
+.ant-form-item .ant-form-item-explain-error {
+  color: #ff4d4f;
+  text-align: left;
+  padding: 4px;
+}
+
+
+.ant-form-item-label {
+  transition: all 0.3s;
+  font-weight: 700;
+}
+
+.float-label .ant-form-item-label {
+  transform: translateY(-100%);
+}
+
+.float-label .ant-form-item-label {
+  position: absolute;
+  top: 0px; /* Adjust this value to control label positioning */
+  transition: top 0.3s, font-size 0.3s;
+  font-size: 12px; /* Adjust font-size as needed */
+  pointer-events: none; /* Ensure label does not interfere with input focus */
+}
+
+.float-label .ant-input:focus + .ant-form-item-label,
+.float-label .ant-input:not(:placeholder-shown) + .ant-form-item-label {
+  top: -30px; /* Adjust this value to control label positioning when focused */
+  font-size: 10px; /* Adjust font-size as needed when focused */
+  color: #1890ff; /* Adjust color as needed when focused */
+}
+
+@media (max-width: 768px) {
+  .responsive-tabs.ant-tabs-left {
+    tabPosition: top !important;
+  }
+}
+
+.ant-form-item-explain-error{
+  max-width: 200px;
+}
+
+.line{
+  border-bottom: 1px solid black;
+  padding: 2px;
+}
+
+.ant-row {
+  padding: 6px !important;
+}
