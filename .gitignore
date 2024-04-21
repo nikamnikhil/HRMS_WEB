@@ -13,3 +13,5 @@ dist-ssr
 *.local
 /node_modules
 *.zip
+/src/.vs
+/.gitignore
